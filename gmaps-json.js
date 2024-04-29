@@ -15,7 +15,11 @@ let gMaps = {
   ]
 }
 
-console.log(gMaps.markers[1]);
-console.log(gMaps.markers[2].name);
+// console.log(gMaps.markers[1]);
+// console.log(gMaps.markers[2].name);
 
-
+for (locations in gMaps) {
+  console.log(eval("gMaps." + locations));
+  console.log(locations);
+  // console.log(gMaps.[locations]);
+}

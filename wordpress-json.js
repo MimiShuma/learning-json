@@ -26,21 +26,21 @@ let WordPress = [
     "comment_status": "open",
     "ping_status": "closed",
     "sticky": false,
-    "template": "",
+    "template": "text1",
     "format": "standard",
-    "meta": [],
+    "meta": [25, 30],
     "categories": [
-      6132
+      6132, 120
     ],
     "tags": [
       1798,
       6298
-    ],
+    ]
 
   }
 ]
 
-console.log(WordPress[0].tag);
+console.log(WordPress[0].tags);
 
 
 

@@ -56,7 +56,12 @@ let colorList = {
   ]
 }
 
-console.log(colorList.colors[3]);
-console.log(colorList.colors[4].code.rgba);
-console.log(colorList.colors[5].code.hex);
+// console.log(colorList.colors[3]);
+// console.log(colorList.colors[4].code.rgba);
+// console.log(colorList.colors[5].code.hex);
 
+for (colors in colorList) {
+  console.log(eval("colorList." + colors)); //output: value
+  console.log(colors);  //output: key
+  // console.log(colorList.[colors]);  //doesn't work
+}

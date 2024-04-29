@@ -24,7 +24,9 @@ let dataBase = [{
   "unit_cost": "$20.53"
 }]
 
-console.log();
+for (data of dataBase) {
+  console.log(data);
+}
 
 
 
